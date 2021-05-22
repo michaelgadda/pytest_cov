@@ -17,6 +17,7 @@ class TestPalindrome(unittest.TestCase):
     	self.assertNotEqual(lp(4), False)
 
     def test_null(self): 
+        self.assertEqual(lp("-1"), False)
     	self.assertEqual(lp(" "), False)
     	self.assertEqual(lp("  "), False)
     	self.assertNotEqual(lp("  "), False)
