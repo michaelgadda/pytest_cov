@@ -7,6 +7,10 @@
 #And when prompted please enter a valid year ( x > 0)
 
 def leap_year_test(year):
+	try: 
+		int(year)
+	except(ValueError):
+		return False
 	if year <= 0:
 		print("Let's try again... Enter a number greater than 0")
 		return False
